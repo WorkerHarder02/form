@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="h">Заказать забор</div>
+        <div class="p_wrapper">
+            <p class="title_length">Длина забора</p>
+        </div>
+        <div class="wrapper_inside">
+            <form id="frm" action="second.html">
+                <div class="input_length">
+                    <input class="input_first" type="number" required />
+                    <div class="length_meter">метров<div class="green_tick_1"> </div>
+                    </div>
+                </div>
+
+                <div class="p_wrapper">
+                    <p class="height_title">Высота Забора</p>
+                </div>
+                <div class="input_height">
+
+                    <input type="number" class="input_second" />
+                    <div class="height_meter">метров <div class="green_tick_2"> </div>
+                    </div>
+
+                </div>
+                <div class="p_wrapper">
+                    <p class="material">Материал забора </p>
+                </div>
+                <div class="selection">
+                    <select class="select">
+                        <option value="400">
+                            <p class="select_p">Профнастил 400 Р за м <sup>2</sup></p>
+                        </option>
+                        <option value="500">
+                            <p class="select_p">Модули 500 Р за м <sup>2</sup></p>
+                        </option>
+                        <option value="700">
+                            <p class="select_p">Бетон 700 Р за м <sup>2</sup></p>
+                        </option>
+                        <option value="200">
+                            <p class="select_p">Сетка за 200 Р за м <sup>2</sup></p>
+                        </option>
+                    </select>
+                </div>
+
+
+                <div class="div"><input type="checkbox" id="check"><label id=" label" for="check">Профнастил</label>
+
+                </div>
+
+                <div class="sum_wrapper">
+                    <p>Сумма заказа:<span class="red"><span class="total_sum">0</span>₽</span></p>
+                </div>
+                <input type="submit" class="next" value="ДАЛЕЕ" disabled="disabled" id="next">
+                </input>
+
+            </form>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
